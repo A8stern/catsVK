@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez7-2o-xYY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ez7-2o-xYY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,6 +40,7 @@
         <scene sceneID="NoG-Eo-lQR">
             <objects>
                 <tabBarController id="ez7-2o-xYY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZsG-YL-7Ou"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xe-IZ-h06">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,15 +48,45 @@
                     </tabBar>
                     <connections>
                         <segue destination="bUH-lw-GBU" kind="relationship" relationship="viewControllers" id="Shn-3v-jSm"/>
+                        <segue destination="4rO-yS-56u" kind="relationship" relationship="viewControllers" id="1PP-9c-dCj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iz1-gJ-dYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2024" y="-239"/>
+            <point key="canvasLocation" x="-2129" y="-256"/>
+        </scene>
+        <!--Texted cat-->
+        <scene sceneID="CTD-3j-gSb">
+            <objects>
+                <navigationController id="4rO-yS-56u" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Texted cat" image="text.bubble" catalog="system" selectedImage="text.bubble.fill" id="y3S-9V-MPO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zT5-5O-Shd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KIq-dP-Xw1" kind="relationship" relationship="rootViewController" id="5vy-Gg-yEV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Cg-CE-rzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-898" y="156"/>
+        </scene>
+        <!--TextedCatStoryboard-->
+        <scene sceneID="rgN-K4-A2q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TextedCatStoryboard" id="KIq-dP-Xw1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zsK-Lm-X9T"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfc-3Z-63t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="156"/>
         </scene>
     </scenes>
     <resources>
         <image name="cat.circle" catalog="system" width="128" height="123"/>
         <image name="cat.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
     </resources>
 </document>

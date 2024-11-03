@@ -14,6 +14,8 @@
 		9C6CE0982CCEA7A1005FD85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0972CCEA7A1005FD85F /* Assets.xcassets */; };
 		9C6CE09B2CCEA7A1005FD85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0992CCEA7A1005FD85F /* LaunchScreen.storyboard */; };
 		9CAEC4782CD1029900E21E68 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAEC4772CD1029900E21E68 /* TabBar.storyboard */; };
+		DD7DF2E62CD7BEE3003748B6 /* TextedCatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF2E52CD7BEE3003748B6 /* TextedCatStoryboard.storyboard */; };
+		DD7DF2E82CD7BF85003748B6 /* TextedCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF2E72CD7BF85003748B6 /* TextedCatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9C6CE09A2CCEA7A1005FD85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6CE09C2CCEA7A1005FD85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAEC4772CD1029900E21E68 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		DD7DF2E52CD7BEE3003748B6 /* TextedCatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextedCatStoryboard.storyboard; sourceTree = "<group>"; };
+		DD7DF2E72CD7BF85003748B6 /* TextedCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextedCatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		9C6CE0A32CD0EF6A005FD85F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DD7DF2E42CD7BECC003748B6 /* TextedCat */,
 				9CAEC4762CD1028700E21E68 /* TabBar */,
 				9C6CE0A22CD0EF60005FD85F /* Welcome */,
 			);
@@ -92,6 +97,15 @@
 				9CAEC4772CD1029900E21E68 /* TabBar.storyboard */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DD7DF2E42CD7BECC003748B6 /* TextedCat */ = {
+			isa = PBXGroup;
+			children = (
+				DD7DF2E52CD7BEE3003748B6 /* TextedCatStoryboard.storyboard */,
+				DD7DF2E72CD7BF85003748B6 /* TextedCatViewController.swift */,
+			);
+			path = TextedCat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DF2E62CD7BEE3003748B6 /* TextedCatStoryboard.storyboard in Resources */,
 				9CAEC4782CD1029900E21E68 /* TabBar.storyboard in Resources */,
 				9C6CE09B2CCEA7A1005FD85F /* LaunchScreen.storyboard in Resources */,
 				9C6CE0982CCEA7A1005FD85F /* Assets.xcassets in Resources */,
@@ -167,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6CE0932CCEA7A0005FD85F /* WelcomeViewController.swift in Sources */,
+				DD7DF2E82CD7BF85003748B6 /* TextedCatViewController.swift in Sources */,
 				9C6CE08F2CCEA7A0005FD85F /* AppDelegate.swift in Sources */,
 				9C6CE0912CCEA7A0005FD85F /* SceneDelegate.swift in Sources */,
 			);
@@ -246,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -303,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -324,15 +340,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConcerteApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kostykulakov.ConcerteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.a8stern.ConcerteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -352,15 +369,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConcerteApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.kostykulakov.ConcerteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.a8stern.ConcerteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
